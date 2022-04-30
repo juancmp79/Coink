@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Coink</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="selected_item">Tipo documento</string>
+
+    <string-array name="documento">
+        <item></item>
+        <item>Tarjeta de Identidad</item>
+        <item>Cédula de ciudadanía</item>
+        <item>Cédula de extranjería</item>
+    </string-array>
+
+    <string-array name="genero">
+        <item></item>
+        <item>Femenino</item>
+        <item>Masculino</item>
+    </string-array>
+
+
+</resources>

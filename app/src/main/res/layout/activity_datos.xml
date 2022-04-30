@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+
+        android:id="@+id/constraintLayout"
+        android:layout_width="394dp"
+        android:layout_height="1022dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton2">
+
+
+        app:passwordToggleDrawable="@drawable/toggle_password"
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="392dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="1dp"
+
+            android:textColorHint="@color/gris"
+            app:endIconMode="password_toggle"
+            app:hintTextAppearance="@style/AppThemePassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress2"
+            app:passwordToggleDrawable="@drawable/ic_eye"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/gris">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTextPostalAddress3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde_inferior"
+                android:ems="10"
+                android:hint="PIN de seguridad"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/gris" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="202dp"
+            android:text="Confirmar correo electrónico"
+            android:textColor="@color/gris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress" />
+
+        <EditText
+            android:id="@+id/editTextTextPostalAddress2"
+
+            android:layout_width="377dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="7dp"
+            android:background="@drawable/borde_inferior"
+            android:ems="10"
+            android:hint="Confirmar correo electrónico"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <Spinner
+            android:id="@+id/idSpinner2"
+            style="@android:style/Widget.Material.Light.Spinner.Underlined"
+            android:layout_width="376dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="1dp"
+            android:backgroundTint="@color/verde_1"
+            android:backgroundTintMode="src_in"
+            android:dropDownSelector="@drawable/ic_launcher_background"
+            android:entries="@array/genero"
+            android:spinnerMode="dialog"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.235"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+        </Spinner>
+
+        <EditText
+            android:id="@+id/editTextNumber2"
+            android:layout_width="374dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/borde_inferior"
+            android:clickable="true"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Fecha de expedición del documento"
+            android:inputType="date"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="274dp"
+            android:text="Fecha nacimiento"
+            android:textColor="@color/gris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
+        <EditText
+            android:id="@+id/editTextNumber3"
+            android:layout_width="374dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/borde_inferior"
+            android:clickable="true"
+            android:ems="10"
+            android:hint="Fecha nacimiento"
+            android:inputType="date"
+            android:textColor="@color/black"
+
+            android:textColorHint="@color/gris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="339dp"
+            android:text="Genero"
+            android:textColor="@color/gris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="106dp"
+            android:text="algunos datos tuyos"
+            android:textColor="#757575"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="126dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView8"
+            app:layout_constraintEnd_toStartOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/marranito" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="77dp"
+
+            android:text="Ahora necesitamos saber"
+            android:textColor="#757575"
+            app:layout_constraintBottom_toTopOf="@+id/textView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="17dp"
+            android:text="___________________________________"
+            android:textColor="@color/verde"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="10dp"
+            android:text="¿CUÁLES SON TUS DATOS?"
+            android:textColor="@color/verde_1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="209dp"
+            android:text="Documento de Identidad"
+            android:textColor="@color/verde_1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        r
+
+        <Spinner
+            android:id="@+id/idSpinner"
+            style="@android:style/Widget.Material.Spinner.Underlined"
+            android:layout_width="378dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/verde_1"
+            android:backgroundTintMode="src_in"
+            android:dropDownSelector="@drawable/ic_launcher_background"
+            android:entries="@array/documento"
+            android:spinnerMode="dialog"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="259dp"
+            android:text="Número documento"
+            android:textColor="@color/gris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idSpinner" />
+
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="374dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/borde_inferior"
+            android:ems="10"
+            android:hint="Numero documento"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="201dp"
+            android:text="Fecha expedición documento"
+            android:textColor="@color/gris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="263dp"
+            android:text="Tipo de documento"
+            android:textColor="@color/gris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="240dp"
+            android:text="Configura tu Cuenta"
+            android:textColor="@color/verde_1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idSpinner2" />
+
+        <EditText
+            android:id="@+id/editTextTextPostalAddress"
+            android:layout_width="372dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="7dp"
+            android:background="@drawable/borde_inferior"
+            android:ems="10"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="266dp"
+            android:text="Correo electrónico"
+            android:textColor="@color/gris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="367dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/redondear2"
+            android:text="Siguiente"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            android:layout_width="392dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="54dp"
+
+            android:textColorHint="@color/gris"
+            app:endIconMode="password_toggle"
+
+            app:hintTextAppearance="@style/AppThemePassword"
+            app:layout_constraintBottom_toTopOf="@+id/button14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+            app:passwordToggleDrawable="@drawable/ic_eye"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/gris">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTextPostalAddress4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde_inferior"
+                android:ems="10"
+                android:hint="Confirmar PIN de seguridad"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/gris" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="72dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/atras" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="135dp"
+            android:text="DATOS DE CUENTA"
+            android:textColor="@color/verde_1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:buttonTint="@color/verde"
+        android:checked="true"
+        android:enabled="false"
+        android:minHeight="48dp"
+        android:text="________"
+        android:textColor="@color/gris"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton3"
+        app:layout_constraintStart_toEndOf="@+id/radioButton1"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:buttonTint="@color/verde"
+        android:checked="true"
+        android:duplicateParentState="false"
+        android:enabled="false"
+        android:minHeight="48dp"
+        android:text="_______"
+        android:textColor="@color/gris"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="16dp"
+        android:buttonTint="@color/verde"
+        android:enabled="false"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:textColor="@color/gris"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioButton2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
