@@ -1,7 +1,7 @@
 # Coink
 Prueba Coink
 
-Se cumple con la prueba para realizar el buil deberan clonar los archivos en su disco y en el IDE de desarrollo 
+Se cumple con la prueba para realizar el build deberan clonar los archivos en su disco y en el IDE de desarrollo 
 ![image](https://user-images.githubusercontent.com/104405326/166085330-d817023c-412d-44b0-bdda-ee26c917a0b9.png)
 
 Una vez descargado en la pestaña File -> New -> Import Proyect..
